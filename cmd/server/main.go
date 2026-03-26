@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func main(){
-	fmt.Println("hello world!")
+	http.HandleFunc("/create-resume", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Println("I dont know what the fuck am doing!")
+	})
 }
