@@ -1,19 +1,19 @@
 package model
 
 type Resume struct {
-    ID          string       `json:"id"`           // unique identifier
+    ID          string       `json:"id"` 
     FirstName   string       `json:"first_name"`
     LastName    string       `json:"last_name"`
     Email       string       `json:"email"`
     Phone       string       `json:"phone"`
     Address     string       `json:"address"`
-    Summary     string       `json:"summary"`      // short bio or objective
+    Summary     string       `json:"summary"`
     Education   []Education  `json:"education"`
     Experience  []Experience `json:"experience"`
     Skills      []string     `json:"skills"`
     Projects    []Project    `json:"projects"`
     Certifications []string  `json:"certifications,omitempty"`
-    Links       []string     `json:"links,omitempty"` // GitHub, LinkedIn, portfolio
+    Links       []string     `json:"links,omitempty"`
 }
 
 type Education struct {

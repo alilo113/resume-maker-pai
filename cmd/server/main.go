@@ -6,7 +6,5 @@ import (
 )
 
 func main(){
-	http.HandleFunc("/create-resume", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Println("I dont know what the fuck am doing!")
-	})
+	http.ListenAndServe(":8000", nil)
 }
