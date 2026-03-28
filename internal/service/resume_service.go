@@ -1,4 +1,4 @@
-package sercvice 
+package service 
 
 import (
 	"resume-maker-pai/internal/model"
@@ -11,6 +11,11 @@ type Response struct {
 	Project model.Project
 }
 
-func CreateResume() Response{
-	return Response
+func CreateResume() Response {
+	return Response {
+		Resume: model.Resume{},
+		Education: model.Education{},
+		Experience: model.Experience{},
+		Project: model.Project{},
+	}
 }

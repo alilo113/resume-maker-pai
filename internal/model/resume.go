@@ -24,7 +24,7 @@ type Education struct {
     EndYear     int    `json:"end_year"`
 }
 
-type Experience struct {
+type Experience struct { 
     Company     string `json:"company"`
     Title       string `json:"title"`
     StartYear   int    `json:"start_year"`
